@@ -34,7 +34,10 @@ const playIfIsBuffer = ()=>{
 
     } else{
         console.log('No Bffer')
-        playIfIsBuffer()
+        setTimeout(() => {
+            playIfIsBuffer()
+            
+        }, 500);
     }
 }
 
