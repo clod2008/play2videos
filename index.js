@@ -28,7 +28,7 @@ video1.addEventListener('progress', function () {
 
 
 const playIfIsBuffer = ()=>{
-    if ((video1.buffered.length == 1) && (video2.buffered.length == 1 )){
+    if ((video1.buffered.length >= 1) && (video2.buffered.length >= 1 )){
         reproducirVideoCompleto(video1)
         reproducirVideoCompleto(video2)
 
